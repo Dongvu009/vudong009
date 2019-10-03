@@ -1,0 +1,103 @@
+#### TD2 ####
+
+#Creer un vecteur de longeur 1 et tester que c'est la meme chose que vu en TD1 
+
+c(1994) == 1994
+#Creer une variable contenant un vecteur plus long 
+
+note_td1 <- c( 1, 3.25,3,5,4.25)
+
+prenom_etudiant <- c("Lea","Maximilen","Lois","Enzo","Perrine")
+
+#Creer var avec le vecteur char
+
+my_bool < - prenom_etudiant == "Sandra"
+
+#propriete du vecteur 
+##lemode 
+
+class(prenom_etudiant)
+class(my_bool)
+#la longeur 
+length(note_td1)
+
+#extraire un element du vecteur 
+prenom_etudiant[3]
+
+#Extraire le premiere et quatrieme note de note_td1
+note_td1[c(1,4)] 
+
+prenom_etudiant [c(1, 2, 3)]
+#Creer un vecteur à partir d'une suite debut : fin
+1:10
+15:20
+
+#Multiplier un vecteur à partir d'un autre vecteur 
+
+prenom_etudiant[1:3]
+length(1:3)
+suite<- 1:3 
+prenom_etudiant[suite]
+
+#Ajouter un element à un vecteur 
+
+note_td1[6] <- 3 
+
+note_td1[10] < 2.25
+note_td1
+
+#NA : variable not avaiable 
+#True or false .... 
+
+#Completer le vecteur pour ne plus avoir le NA
+
+note_td1[7] <- 2 
+note_td1[c(8,9)]<- c(1,5,4)
+note_td1
+
+#nommer les element d'un vecteur 
+
+names(note_td1) <- prenom_etudiant 
+note_td1
+
+prenom2 <- c("Victorine"  , "Kassia" ,prenom_etudiant, "Blissam")
+
+names(note_td1) <- prenom2
+note_td1
+
+#Extraire par naming 
+note_td1["Julie"]
+note_td1[c("Lois", "Enzo")]
+
+#Extraire ce qui a note >2 
+note_td1[note_td1 > 2 ]
+
+note_td1[note_td1 == 2 ]
+note_td1[note_td1 != 5 ]
+
+#Note td2
+note_td2<- note_td1
+note_td2[11] <- "2.25" 
+
+#Opeartion de bas sur des vecteurs 
+
+mean(note_td2)
+
+#conversion du char en numerique 
+
+note_td2 <- as.numeric(note_td2)
+note_td2
+note_td2
+mean(note_td2 , na.rm = TRUE )
+sum(note_td2, na.rm = TRUE)/length(note_td2)
+sd(note_td2 , na.rm = TRUE)
+
+as.numeric(TRUE)
+as.numeric(F)
+
+as.numeric(as.character("3"))
+as.numeric(as.character(3))
+as.numeric(as.character(TRUE))
+
+
+
